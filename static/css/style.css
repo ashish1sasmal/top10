@@ -87,3 +87,16 @@ div.bg-image{
 	list-style-type: none;
 	display: inline; 
 }
+
+.user_login{
+	margin-left: 20%;
+	color:white;
+}
+.user_login input{
+	width: 30%;
+}
+
+.user_login label{
+	color: white;
+	font-size:30px;
+}

@@ -32,11 +32,16 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Register</a>
       </li>
-
+      {% if user.is_authenticated %}
       <li class="nav-item active" style="color: red;">
-        <a class="nav-link" href="#"  style="color: red">Login</a>
+        <a class="nav-link" href="{% url 'logout' %}"  style="color: red">Logout</a>
       </li>
-      
+
+      {%else%}
+      <li class="nav-item active" style="color: red;">
+        <a class="nav-link" href="{% url 'top10:user_login' %}"  style="color: red">Login</a>
+      </li>
+      {%endif%}
     </ul>
   </div>
 </nav>

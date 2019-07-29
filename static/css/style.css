@@ -1,0 +1,86 @@
+.navbar-default{
+      background-color: black;
+      font-size: 23px;
+      font-family: 'Anton', sans-serif;
+		color: red !important;
+
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: 0px;
+    }
+
+
+
+ .navbar-default li{
+ 	margin-left: 20px;
+ }
+
+ .navbar-brand{
+ 	margin-left: 20px;
+ 	font-size: 30px;
+ 	color: red;
+ }
+
+div.bg-image{
+	background-image: url('http://c1.peakpx.com/wallpaper/973/851/703/musician-cables-concert-rock-wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 2%;
+}
+
+.content{
+	color:white;
+	text-align: left;
+	margin-left: 16%;
+	float: center;
+	width: 50%;
+	font-style: bold;
+	font-family:  'Fjalla One', sans-serif;
+	background-color: rgba(153, 126, 124,0.3);
+}
+
+.content h1:hover{
+	color: #14bd0b;
+}
+
+.content ol{
+	 -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap:10px;
+}
+
+/*.s-m{
+  margin: 310px auto;
+  justify-content: space-around;
+  display: flex;
+  max-width: 700px;
+}*/
+.s-m a{
+  font-size: 20px;
+  color: red;
+  text-align: center;
+	margin-left: 30px;
+}
+.s-m a:hover{
+  transform: scale(1.2);
+}*/
+
+.bottom{
+	width: 100%;
+
+
+}
+
+.bottom{
+	color:white;
+		font-family: 'Saira Stencil One', cursive;
+	background-color: black;
+}
+
+.bottom ul{
+	list-style-type: none;
+	display: inline; 
+}

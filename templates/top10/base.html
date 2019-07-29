@@ -1,0 +1,80 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet"> 
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark  navbar-default">
+  <a class="navbar-brand" href="#" style="color: red;">Top 10</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" >
+    <ul class="navbar-nav" >
+
+      <li>
+        <a class="nav-link" href="{% url 'admin:index' %}">Admin </a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+
+      <li class="nav-item active" style="color: red;">
+        <a class="nav-link" href="#"  style="color: red">Login</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</header>
+
+
+<body>
+              
+	     <div class="bg-image">
+         {% block content %}{% endblock content %}
+       </div>
+
+
+</body>
+
+<footer class="bottom" >
+  <div class="foot-logo">
+    <h2>Canvash's</h2>
+    <h5>Den</h5>
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+
+    <div class="s-m">
+      <a class="fa fa-facebook" href="#"></a>
+      <a class="fa fa-twitter" href="#"></a>
+      <a class="fa fa-google-plus" href="#"></a>
+      <a class="fa fa-youtube" href="#"></a>
+      <a class="fa fa-linkedin" href="#"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </div>
+    
+</footer>
+</html>

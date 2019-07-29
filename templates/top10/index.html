@@ -1,0 +1,14 @@
+{% extends 'top10/base.html' %}
+{% block content %}
+		<div class="content">
+			<h1 ><u>Top 10 Music Hits</u></h1><br>
+				<ol>
+				{% for album in album%}
+				<li><a href={{album.link}} target="_blank"><h4>{{album.name}}</h4></a>
+					<p class="text-muted" >{{ album.artist }} </p>
+				</li></tr>
+				{% endfor %}
+			</ol>
+			
+		</div>
+{% endblock content %}

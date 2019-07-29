@@ -6,4 +6,5 @@ app_name='top10'
 
 urlpatterns = [
     path('login/',views.user_login,name='user_login'),
+    path('register/',views.register,name='register')
 ]

@@ -1,0 +1,23 @@
+{% extends 'top10/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+	<div class="jumbotron">
+		{% if registered %}
+			<h1>ThankYou For Registering!</h1>
+
+		{% else %}
+			<h1>Register Here!</h1>
+			<h3>Fill Out THe Form</h3>
+			<form method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				{{ user_form.as_p }}
+
+				{{ profile_form.as_p }}
+				<input type="submit" value="Register">
+			</form>
+
+		{%endif%}
+	</div>
+
+{% endblock content %}

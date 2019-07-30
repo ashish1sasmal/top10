@@ -102,6 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS':{'min_length':9}
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -135,4 +136,4 @@ STATICFILES_DIRS=[STATIC_DIR,]
 MEDIA_ROOT=MEDIA_DIR
 MEDIA_URL='/media/'
 
-LOGIN_URL='/music/user_login'
+LOGIN_URL='/top10/user_login'
